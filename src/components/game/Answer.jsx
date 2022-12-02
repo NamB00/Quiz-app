@@ -16,7 +16,7 @@ const Answer = ({
 	useEffect(() => {
 		const fetchData = async () => {
 			const res = await axios.get(
-				'http://127.0.0.1:5173/src/components/data/questions.json'
+				'https://api.npoint.io/44eb48997b8f9cbb6894'
 			);
 			await setAnswersTorage(res.data);
 		};
